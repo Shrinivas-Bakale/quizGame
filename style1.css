@@ -17,6 +17,8 @@ body {
     rgba(192, 0, 255, 1) 6%,
     rgba(244, 105, 224, 1) 100%
   ); */
+  /* background-color: #de98cb; */
+
 }
 
 .nav-main {
@@ -26,12 +28,13 @@ body {
 }
 
 nav {
-  background: rgb(192, 0, 255);
-  background: linear-gradient(
+  /* background: rgb(192, 0, 255); */
+  /* background: linear-gradient(
     90deg,
     rgba(192, 0, 255, 1) 6%,
     rgba(244, 105, 224, 1) 100%
-  );
+  ); */
+  background-color: #7b1d46;
   padding: 10px;
   color: white;
 }
@@ -44,12 +47,13 @@ nav {
 }
 
 .main-card1 {
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 25px;
-  background-color: blueviolet;
+  background-color: #CC2B52;
   display: flex;
   flex-direction: column;
   align-items: start;
+  border-radius: 15px;
 }
 
 .card1-img {
@@ -76,6 +80,6 @@ a {
   color: black;
 }
 
-.card1-text{
-    font-size: large;
+.card1-text {
+  font-size: large;
 }
