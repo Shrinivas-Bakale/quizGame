@@ -74,7 +74,8 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-  color: #aa2c86;
+  color: white;
+  font-size: 24px;
 }
 
 /*Css for container (home section)*/
