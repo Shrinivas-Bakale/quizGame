@@ -17,7 +17,7 @@ body {
 }
 .main {
   min-height: 100vh;
-  background: url("/Assets/background2.jpg") no-repeat;
+  background: url("/Assets/round1-bg1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   pointer-events: auto;
