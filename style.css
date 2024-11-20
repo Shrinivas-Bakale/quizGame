@@ -11,13 +11,13 @@
 }
 
 body {
-  color: #fff;
+  color: white;
   background: #09001d;
   overflow: hidden;
 }
 .main {
   min-height: 100vh;
-  background: url("/Assets/round1-bg1.jpg") no-repeat;
+  background: url("/Assets/forest10.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   pointer-events: auto;
@@ -32,12 +32,12 @@ body {
   margin: 5%;
   padding: 10px;
   border-radius: 10px;
-  color: #a60045;
+  color: black;
   font-size: larger;
 }
 
 .start-text {
-  color: #a60045;
+  color: white;
   margin-bottom: 15px;
 }
 
@@ -60,7 +60,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  filter: drop-shadow(0 0 5px #09001d);
+  text-shadow: 1px 1px 5px #959e88;
 }
 
 .navbar a {
@@ -105,34 +105,36 @@ body {
 .home-content h1 {
   font-size: 78px;
   font-weight: 700;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-shadow: 1px 1px 5px #959e88;
 }
 
 .home-content p {
+  color: white;
   font-size: 16px;
   text-align: center;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 5px #959e88;
   margin-bottom: 30px;
 }
 
 .home-content .start-btn {
   width: 190px;
   height: 55px;
-  background: #aa2c86;
+  background: transparent;
   border: 2px solid #fff;
   outline: none;
   border-radius: 10px;
-  box-shadow: 0 0 10px #aa2c86;
+  box-shadow: 0 0 10px black;
   font-size: 18px;
   color: #fff;
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-content .start-btn:hover {
-  background: transparent;
-  /* background: #09001d */
+  background: #000;
   box-shadow: none;
 }
 
@@ -159,7 +161,7 @@ body {
 
 .popup-info h2 {
   font-size: 50px;
-  color: #aa2c86;
+  color: black;
 }
 
 .popup-info .info {
@@ -175,7 +177,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #aa2c86;
+  border-top: 1px solid black;
   margin-top: 10px;
   padding: 15px 0 7px;
 }
@@ -186,8 +188,8 @@ body {
   align-items: center;
   width: 130px;
   height: 45px;
-  background: #aa2c86;
-  border: 2px solid #aa2c86;
+  background: #181818;
+  border: 2px solid black;
   outline: none;
   border-radius: 6px;
   text-decoration: none;
@@ -201,17 +203,17 @@ body {
 
 .popup-info .btn-group .info-btn:nth-child(1) {
   background: transparent;
-  color: #aa2c86;
+  color: black;
 }
 
 .popup-info .btn-group .info-btn:nth-child(1):hover {
-  background: #aa2c86;
-  color: #fff;
+  background: black;
+  color: white;
 }
 
 .popup-info .btn-group .info-btn:nth-child(2):hover {
-  background: #681650;
-  border-color: #681650;
+  background: black;
+  border-color: black;
 }
 
 /*Css for container (quiz-section)*/
@@ -219,7 +221,13 @@ body {
   position: relative;
   left: -50%;
   width: 100%;
-  background: #09001d;
+  min-height: 100vh;
+  background: url("/Assets/forest10 blur.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  pointer-events: auto;
+  transition: 2s ease;
+  /* filter: blur(8px); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +244,7 @@ body {
   position: relative;
   width: 500px;
   background: transparent;
-  border: 2px solid #aa2c86;
+  border: 2px solid #fff;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -268,7 +276,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 2px solid #aa2c86;
+  border-bottom: 2px solid white;
   margin-bottom: 30px;
 }
 
@@ -350,8 +358,8 @@ body {
   width: 100px;
   height: 45px;
   pointer-events: auto;
-  background: #aa2c86;
-  border-color: #aa2c86;
+  background: black;
+  border-color: white;
   color: #fff;
   border-radius: 6px;
   font-size: 16px;
@@ -367,7 +375,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 2px solid #aa2c86;
+  border-top: 2px solid white;
   padding-top: 20px;
   margin-top: 25px;
 }
@@ -394,15 +402,10 @@ body {
 
 .quiz-footer .next-btn.active {
   pointer-events: auto;
-  background: #aa2c86;
-  border-color: #aa2c86;
+  background: #000;
+  border-color: white;
   color: #fff;
 }
-.quiz-footer .next-btn.active:hover {
-  background: #681650;
-  border-color: #681650;
-}
-
 /* CSS for result box */
 
 .quiz-section .result-box {
@@ -412,7 +415,7 @@ body {
   transform: translate(-50%, -50%) scale(0.9);
   width: 500px;
   background: transparent;
-  border: 2px solid #aa2c86;
+  border: 2px solid #fff;
   border-radius: 6px;
   padding: 20px;
   display: flex;
@@ -480,8 +483,8 @@ body {
 .buttons button {
   width: 130px;
   height: 47px;
-  background-color: #aa2c86;
-  border: 2px solid #aa2c86;
+  background-color: #000;
+  border: 2px solid #fff;
   outline: none;
   border-radius: 6px;
   font-size: 16px;
@@ -490,8 +493,8 @@ body {
   margin: 0 20px 20px;
   cursor: pointer;
 }
-
+/* 
 .buttons button:hover {
   background: #681650;
   border-color: #681650;
-}
+} */

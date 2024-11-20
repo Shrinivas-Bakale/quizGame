@@ -35,21 +35,55 @@ continueBtn.onclick = () => {
   showQuestions(0);
   questionCounter(1);
   // headerScore()
+  startTimer(0.2 * 60); // 50 minutes in seconds
 };
 
-tryAgainBtn.onclick = () => {
-  quizBox.classList.add("active");
-  resultBox.classList.remove("active");
-  nextBtn.classList.remove("active");
+function startTimer(duration) {
+  const timerDiv = document.querySelector(".timer-div"); // Add a div with the class timer-div in your HTML
+  let timeRemaining = duration;
 
-  questionCount = 0;
-  questionNumb = 1;
-  userScore = 0;
-  showQuestions(questionCount);
-  questionCounter(questionNumb);
+  const timerInterval = setInterval(() => {
+    const minutes = Math.floor(timeRemaining / 60);
+    const seconds = timeRemaining % 60;
 
-  // headerScore()
-};
+    // Update the timer display
+    timerDiv.textContent = `${minutes.toString().padStart(2, "0")}:${seconds
+      .toString()
+      .padStart(2, "0")}`;
+
+    if (timeRemaining <= 0) {
+      clearInterval(timerInterval);
+      requestPassword();
+    }
+    timeRemaining--;
+  }, 1000); // Update every second
+}
+
+const resultPassword = "klebca@69";
+
+function requestPassword() {
+  const userPassword = prompt("Enter the password to view your results:");
+  if (userPassword === resultPassword) {
+    showResultBox();
+  } else {
+    alert("Incorrect password. You cannot view the results.");
+    requestPassword();
+  }
+}
+
+// tryAgainBtn.onclick = () => {
+//   quizBox.classList.add("active");
+//   resultBox.classList.remove("active");
+//   nextBtn.classList.remove("active");
+
+//   questionCount = 0;
+//   questionNumb = 1;
+//   userScore = 0;
+//   showQuestions(questionCount);
+//   questionCounter(questionNumb);
+
+//   // headerScore()
+// };
 goHomeBtn.onclick = () => {
   quizSection.classList.remove("active");
   resultBox.classList.remove("active");
@@ -130,7 +164,6 @@ const optionList = document.querySelector(".option-list");
 //   nextBtn.classList.add("active");
 // }
 
-
 let selectedAnswer = null; // To track the user's selected answer
 
 function showQuestions(index) {
@@ -149,15 +182,15 @@ function showQuestions(index) {
 
   // Enable the Submit button only when an option is selected
   const radios = document.querySelectorAll('input[name="answer"]');
-  radios.forEach(radio => {
+  radios.forEach((radio) => {
     radio.onclick = () => {
       selectedAnswer = radio.value;
-      document.getElementById('submitBtn').disabled = false;
+      document.getElementById("submitBtn").disabled = false;
     };
   });
 
   // Disable Next button until after submission
-  nextBtn.classList.remove('active');
+  nextBtn.classList.remove("active");
 }
 
 function submitAnswer() {
@@ -183,11 +216,11 @@ function submitAnswer() {
 
   // Disable all options after submission
   const radios = document.querySelectorAll('input[name="answer"]');
-  radios.forEach(radio => radio.disabled = true);
+  radios.forEach((radio) => (radio.disabled = true));
 
   // Enable the Next button after submission
-  nextBtn.classList.add('active');
-  document.getElementById('submitBtn').disabled = true; // Disable the Submit button
+  nextBtn.classList.add("active");
+  document.getElementById("submitBtn").disabled = true; // Disable the Submit button
 }
 
 function nextQuestion() {
@@ -199,11 +232,6 @@ function nextQuestion() {
   }
   selectedAnswer = null;
 }
-
-
-
-
-
 
 function questionCounter(index) {
   const questionTotal = document.querySelector(".question-total");
@@ -224,20 +252,20 @@ function showResultBox() {
   const scoreText = document.querySelector(".score-text");
   scoreText.textContent = `Your Score ${userScore} out of ${questions.length}`;
 
-  const circularProgress = document.querySelector(".circular-progress");
-  const progressValue = document.querySelector(".progress-value");
-  let progressStartValue = -1;
-  let progressEndValue = (userScore / questions.length) * 100;
-  let speed = 20;
+  // const circularProgress = document.querySelector(".circular-progress");
+  // const progressValue = document.querySelector(".progress-value");
+  // let progressStartValue = -1;
+  // let progressEndValue = (userScore / questions.length) * 100;
+  // let speed = 20;
 
-  let progress = setInterval(() => {
-    progressStartValue++;
-    progressValue.textContent = `${progressStartValue}%`;
-    circularProgress.style.background = `conic-gradient(#AA2C86 ${
-      progressStartValue * 3.6
-    }deg, rgba(255, 255, 255, .1) 0deg)`;
-    if (progressStartValue == progressEndValue) {
-      clearInterval(progress);
-    }
-  }, speed);
+  // let progress = setInterval(() => {
+  //   progressStartValue++;
+  //   progressValue.textContent = `${progressStartValue}%`;
+  //   circularProgress.style.background = `conic-gradient(#AA2C86 ${
+  //     progressStartValue * 3.6
+  //   }deg, rgba(255, 255, 255, .1) 0deg)`;
+  //   if (progressStartValue == progressEndValue) {
+  //     clearInterval(progress);
+  //   }
+  // }, speed);
 }

@@ -13,7 +13,7 @@
         <a href="#" class="logo">KLES BCA</a>
 
         <nav class="navbar">
-          <a href="index.html" class="active">Home</a>
+          <!-- <a href="index.html" class="active">Home</a> -->
           <!-- <a href="#">About</a>
           <a href="#">Contact</a> -->
         </nav>
@@ -28,6 +28,7 @@
             <div class="quiz-header">
               <span>Welcome to Quiz Game</span>
               <!-- <span class="header-score">Score: 0 / 5</span> -->
+              <div class="timer-div" style="font-size: 24px; font-weight: bold; margin: 10px 0;"></div>
             </div>
 
             <h2 class="question-text"></h2>
@@ -38,6 +39,7 @@
               <span class="question-total"></span>
               <button id="submitBtn" onclick="submitAnswer()">Submit</button>
               <button class="next-btn">Next</button>
+              <!-- <button onclick="showResultBox()">result-box</button> -->
             </div>
           </div>
 
@@ -48,13 +50,13 @@
               class="name-output"
             ></div>
             <div class="percentage-container">
-              <div class="circular-progress">
+              <!-- <div class="circular-progress">
                 <span class="progress-value">0%</span>
-              </div>
+              </div> -->
               <span class="score-text">Your Score 0 out of 5</span>
             </div>
             <div class="buttons">
-              <button class="tryAgain-btn">Try Again</button>
+              <!-- <button class="tryAgain-btn">Try Again</button> -->
               <button class="goHome-btn">Go To Home</button>
             </div>
           </div>
@@ -83,15 +85,21 @@
     <!-- Division for Quiz guide popup-->
     <div class="popup-info">
       <h2>Quiz Guide</h2>
-      <span class="info">1. You cannot skip any questions.</span>
       <span class="info"
-        >2. Once attempt any question, you cannot go to previous question.</span
+        >1. This round contains 60 questions and 50 minutes is allotted
+        time.</span
+      ><br />
+      <span class="info">2. You cannot skip any questions.</span><br />
+      <span class="info"
+        >3. Once you hit submit, you cannot change the answer.</span
+      ><br />
+      <span class="info"
+        >4. The team which is found cheating is disqualified.</span
       >
       <span class="info"
-        >3. After one answer is selected, other option will be disabled.</span
+        >5. Teams that fail to complete all questions within the allotted 50
+        minutes will be automatically logged out of the quiz.</span
       >
-      <span class="info">4. You will be given total 5 questions.</span>
-      <span class="info">5. Concentrate on your Quiz, Don't try to cheat.</span>
 
       <!--Buttons for starting quiz  -->
       <div class="btn-group">
