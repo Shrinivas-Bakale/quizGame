@@ -245,9 +245,14 @@ let questions = [
   },
   {
     numb: 32,
-    question: "What is the official language of Egypt?",
-    answer: "A. Arabic",
-    options: ["A. Arabic", "B. Hebrew", "C. Persian", "D. English"],
+    question: "Which is the correct spelling?",
+    answer: "B) Separation",
+    options: [
+      "A) Seperation",
+      "B) Separation",
+      "C) Separetion",
+      "D) Separeation",
+    ],
   },
   {
     numb: 33,
@@ -285,13 +290,13 @@ let questions = [
   },
   {
     numb: 36,
-    question: "What does 'www' stand for in a website address?",
-    answer: "A. World Wide Web",
+    question: "Which famous personality is nicknamed 'Nightingale of India'?",
+    answer: "A) Sarojini Naidu",
     options: [
-      "A. World Wide Web",
-      "B. Web World Wide",
-      "C. Web Wide World",
-      "D. World Web Wide",
+      "A) Sarojini Naidu",
+      "B) Lata Mangeshkar",
+      "C) Indira Gandhi",
+      "D) Kasturba Gandhi",
     ],
   },
   {
@@ -327,9 +332,14 @@ let questions = [
   },
   {
     numb: 41,
-    question: "Which Indian state is known as the 'Land of the Five Rivers'?",
-    answer: "A. Punjab",
-    options: ["A. Punjab", "B. Haryana", "C. Uttar Pradesh", "D. Bihar"],
+    question: "The death anniversary of whom is observed as 'Martyr's Day'?",
+    answer: "Mahatma Gandhi",
+    options: [
+      "Mahatma Gandhi",
+      "Subhash Chandra Bose",
+      "Bhagat Singh",
+      "Sardar Vallabhbhai Patel",
+    ],
   },
   {
     numb: 42,
@@ -341,5 +351,144 @@ let questions = [
       "C. Mark Zuckerberg",
       "D. Jeff Bezos",
     ],
+  },
+  {
+    numb: 43,
+    question: "Which country is the largest producer of coffee in the World?",
+    answer: "a. Brazil",
+    options: ["a. Brazil", "b. Columbia", "c. India", "d. Indonesia"],
+  },
+  {
+    numb: 44,
+    question: "Who is the first Indian woman to win a medal in the Olympics?",
+    answer: "c. Karnam Malleshwari",
+    options: [
+      "a. P.T. Usha",
+      "b. Mary Kom",
+      "c. Karnam Malleshwari",
+      "d. Saina Nehwal",
+    ],
+  },
+  {
+    numb: 45,
+    question: "Which is the First AI Tool launched in the world?",
+    answer: "Devin AI",
+    options: ["Devin AI", "OpenAI", "IBM Watson", "ChatGPT"],
+  },
+  {
+    numb: 46,
+    question: "Which is the correct spelling?",
+    answer: "A) Cooperation",
+    options: [
+      "A) Cooperation",
+      "B) Cooporation",
+      "C) Cooperaton",
+      "D) Coopperation",
+    ],
+  },
+  {
+    numb: 47,
+    question:
+      "The first woman president of India, Pratibha Patil, was the first woman governor of which state?",
+    answer: "(B) Rajasthan",
+    options: ["(A) Maharashtra", "(B) Rajasthan", "(C) Gujarat", "(D) Goa"],
+  },
+  {
+    numb: 48,
+    question:
+      "Which of these metals or non-metals is the main constituent of both brass and bronze?",
+    answer: "(C) Copper",
+    options: ["(A) Carbon", "(B) Lead", "(C) Copper", "(D) Silver"],
+  },
+  {
+    numb: 49,
+    question:
+      "Which country launched the world's first successful space flight?",
+    answer: "Soviet Union (Russia)",
+    options: ["Soviet Union (Russia)", "United States", "Germany", "China"],
+  },
+  {
+    numb: 50,
+    question: "Which Indian state is known as the 'Land of the Five Rivers'?",
+    answer: "A. Punjab",
+    options: ["A. Punjab", "B. Haryana", "C. Uttar Pradesh", "D. Bihar"],
+  },
+  {
+    numb: 51,
+    question: "Which is the correct spelling?",
+    answer: "b) vacuum",
+    options: ["a) vaccum", "b) vacuum", "c) vaccuum", "d) vaccuumm"],
+  },
+  {
+    numb: 52,
+    question: "What is the official language of Egypt?",
+    answer: "A. Arabic",
+    options: ["A. Arabic", "B. Hebrew", "C. Persian", "D. English"],
+  },
+  {
+    numb: 53,
+    question:
+      "Guess the movie in which this dialogue is used: 'Har baccha special hai'?",
+    answer: "A) Taare Zameen Par",
+    options: [
+      "A) Taare Zameen Par",
+      "B) 3 Idiots",
+      "C) Dangal",
+      "D) Chhichhore",
+    ],
+  },
+  {
+    numb: 54,
+    question:
+      "Guess the movie in which this dialogue is used: 'Atha majhi satakli'?",
+    answer: "A) Singham",
+    options: ["A) Singham", "B) Simmba", "C) Dabangg", "D) Sooryavanshi"],
+  },
+  {
+    numb: 55,
+    question: "Which famous personality is nicknamed 'Human Computer'?",
+    answer: "A) Shakuntala Devi",
+    options: [
+      "A) Shakuntala Devi",
+      "B) Homi Bhabha",
+      "C) C.V. Raman",
+      "D) Srinivasa Ramanujan",
+    ],
+  },
+  {
+    numb: 56,
+    question: "What does 'www' stand for in a website address?",
+    answer: "A. World Wide Web",
+    options: [
+      "A. World Wide Web",
+      "B. Web World Wide",
+      "C. Web Wide World",
+      "D. World Web Wide",
+    ],
+  },
+  {
+    numb: 57,
+    question:
+      "It is a small red fruit, also found on a shoe polish. What is it?",
+    answer: "A) Cherry",
+    options: ["A) Cherry", "B) Apple", "C) Strawberry", "D) Cranberry"],
+  },
+  {
+    numb: 58,
+    question: "Amaze, Elevate, and City are all cars of which brand?",
+    answer: "A) Honda",
+    options: ["A) Honda", "B) Toyota", "C) Hyundai", "D) Ford"],
+  },
+  {
+    numb: 59,
+    question: "Which bird is used as a symbol of peace?",
+    answer: "A) Dove",
+    options: ["A) Dove", "B) Sparrow", "C) Pigeon", "D) Peacock"],
+  },
+  {
+    numb: 60,
+    question: "How many millions are there in a billion?",
+    answer: "A) 1000",
+    options: ["A) 1000", "B) 100", "C) 10,000", "D) 10"],
   },
 ];

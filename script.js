@@ -35,7 +35,7 @@ continueBtn.onclick = () => {
   showQuestions(0);
   questionCounter(1);
   // headerScore()
-  startTimer(0.2 * 60); // 50 minutes in seconds
+  startTimer(50 * 60); // 50 minutes in seconds
 };
 
 function startTimer(duration) {
@@ -112,7 +112,7 @@ nextBtn.onclick = () => {
 
     nextBtn.classList.remove("active");
   } else {
-    showResultBox();
+    requestPassword();
   }
 };
 
