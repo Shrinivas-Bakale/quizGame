@@ -5,7 +5,7 @@ function requestPassword() {
   if (userPassword === resultPassword) {
     window.location.href = "round1.html";
   } else {
-    alert("Incorrect password. You cannot view the results.");
+    alert("Incorrect password.");
     requestPassword();
   }
 }
@@ -17,7 +17,7 @@ function requestPassword2() {
   if (userPassword === resultPassword2) {
     window.location.href = "round3.html";
   } else {
-    alert("Incorrect password. You cannot view the results.");
+    alert("Incorrect password.");
     requestPassword2();
   }
 }
@@ -29,7 +29,7 @@ function requestPassword3() {
   if (userPassword === resultPassword3) {
     window.open("https://www.games68.com/games.php?id=6264", "_blank");
   } else {
-    alert("Incorrect password. You cannot view the results.");
+    alert("Incorrect password.");
     requestPassword3(); // Correct function call
   }
 }
@@ -42,7 +42,7 @@ function requestPassword4() {
   if (userPassword === resultPassword4) {
     window.location.href = "./Assets/Round 3.pdf";
   } else {
-    alert("Incorrect password. You cannot view the results.");
+    alert("Incorrect password.");
     requestPassword4();
   }
 }
