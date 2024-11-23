@@ -243,9 +243,12 @@ body {
 .quiz-section .quiz-box {
   position: relative;
   width: 500px;
-  background: transparent;
-  border: 2px solid #fff;
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(5px); /* Adds the frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Soft shadow */
   display: flex;
   flex-direction: column;
   padding: 20px 30px;

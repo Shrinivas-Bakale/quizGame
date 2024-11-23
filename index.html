@@ -6,6 +6,7 @@
     <title>Quiz Game Website</title>
     <!--Link CSS files-->
     <link rel="stylesheet" href="style1.css" />
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon/android-chrome-512x512.png">
   </head>
   <body>
     <div class="background">
@@ -45,7 +46,7 @@
             competitive start to the quiz competition.
           </div>
           <div style="width: 100%; margin-top: 25px">
-            <button class="btn" onclick="window.location.href = 'round1.html'">
+            <button class="btn" onclick="requestPassword()">
               Round 1
             </button>
           </div>
@@ -85,7 +86,7 @@
             more, making this the most thrilling segment of your   quiz  event.
           </div>
           <div style="width: 100%; margin-top: 59px">
-            <button class="btn" onclick="window.location.href = 'round3.html'">
+            <button class="btn" onclick="requestPassword2()">
               Round 3
             </button>
           </div>
@@ -93,12 +94,29 @@
       </div>
 
       <div class="footer">
-        <div class="flex" style="height: 60px; background-color: #25613e;color: white;margin-top: 25px;">
-          <h4>
-            Created and Developed by Shrinivas 
+        <div
+          class="footer"
+          style="
+            height: 60px;
+            background-color: #25613e;
+            color: white;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <h4 style="margin: 0">
+            Created and Developed with
+            <span style="color: #ff6b6b">frustration</span> by Shrinivas
           </h4>
         </div>
       </div>
     </div>
+    <script src="script1.js"></script>
   </body>
 </html>

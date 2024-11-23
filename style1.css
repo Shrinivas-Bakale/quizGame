@@ -79,14 +79,22 @@ nav {
 }
 
 .main-card1 {
-  border: 4px groove #b8e5bc;
+  border: 1px solid rgba(255, 255, 255, 0.462); /* Subtle border with transparency */
   padding: 10px;
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  backdrop-filter: blur(7px); /* Apply blur effect */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
   display: flex;
   flex-direction: column;
   align-items: start;
   border-radius: 15px;
   width: 32%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect smoothness */
+}
+
+.main-card1:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.429); /* Enhance shadow on hover */
 }
 
 .card1-img {
@@ -127,5 +135,3 @@ a {
   font-size: large;
   color: rgba(245, 245, 245, 0.799);
 }
-
-
